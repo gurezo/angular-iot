@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var require: any;
+const { requestGPIOAccess } = require('node-web-gpio');
+// const { promisify } = require("util");
+// const sleep = promisify(setTimeout);
+
 @Component({
   selector: 'ngiot-root',
   templateUrl: './app.component.html',
@@ -11,8 +16,11 @@ export class AppComponent implements OnInit {
 
   title = '停止中';
 
-  ngOnInit() {
+  // constructor(private polyfull: chirimen) {}
+
+  async ngOnInit() {
     this.isLedBlink = false;
+    const gpioAccess = await requestGPIOAccess();
   }
 
   onClick() {
