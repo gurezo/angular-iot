@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppService } from './app.service';
-
+import { GpioService } from './gpio.service';
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +13,7 @@ import { AppService } from './app.service';
     AppRoutingModule
   ],
   providers: [
-    AppService
+    GpioService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AppService } from './app.service';
+import { GpioService } from './gpio.service';
 
-describe('AppService', () => {
-  let service: AppService;
+describe('GpioService', () => {
+  let service: GpioService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AppService);
+    service = TestBed.inject(GpioService);
   });
 
   it('should be created', () => {
