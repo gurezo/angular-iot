@@ -8,10 +8,17 @@ sudo apt-get -y autoclean
 
 # curlコマンドがbashのシェルスクリプトを介して実行されない
 # https://is.gd/bSlbfa
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+# 仮実装
+# curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+nodeInstallCmd=`curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
+eval ${nodeInstallCmd}
 sudo apt install nodejs -y
 
-curl -fsSL https://get.docker.com -o get-docker.sh
+# 仮実装
+# curl -fsSL https://get.docker.com -o get-docker.sh
+dockerInstallCmd=`curl -fsSL https://get.docker.com -o get-docker.sh`
+eval ${dockerInstallCmd}
 chmod 755 get-docker.sh
 sudo sh get-docker.sh
 
