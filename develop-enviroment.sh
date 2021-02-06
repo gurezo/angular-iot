@@ -1,5 +1,6 @@
-set -e
+#!/bin/bash
 
+set -e
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -10,6 +11,7 @@ sudo apt-get -y autoclean
 # https://is.gd/bSlbfa
 
 # 仮実装
+# https://github.com/nodesource/distributions 参照
 # curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 nodeInstallCmd=`curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
 eval ${nodeInstallCmd}
