@@ -5,7 +5,7 @@ set -e
 echo "apt-get -y update ----------------------------------"
 sudo apt-get -y update
 echo "apt-get -y upgrade ----------------------------------"
-sudo apt-get -y upgrade
+sudo apt-get -y full-upgrade
 echo "apt-get -y autoremove ----------------------------------"
 sudo apt-get -y autoremove
 echo "apt-get -y autoclean ----------------------------------"
