@@ -5,11 +5,8 @@ set -e
 # コンテナ終了
 docker-compose down
 
-# コンテナを全削除する
-docker ps -aq | xargs docker rm
-
-# イメージを全削除する
-docker images -aq | xargs docker rmi
+# 停止しているコンテナをすべて削除する
+docker container prune
 
 # コンテナビルド開始
 docker-compose up -d --build
