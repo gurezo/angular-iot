@@ -21,11 +21,15 @@ echo "docker install  ----------------------------------"
 dockerInstallCmd=`curl -sSL https://get.docker.com | sh`
 eval ${dockerInstallCmd}
 
+# Even if E: Sub-process / usr / bin / dpkg returned an error code (1) occurs, 
+# the installation is complete.
 echo "if E: Sub-process /usr/bin/dpkg returned an error code (1) occured"
 echo "but Docker install OK Raspberry Pi reboot"
 
+# user group add
 echo "docker usermod  ----------------------------------"
 sudo usermod -aG docker pi
 
+# Reboot to complete docker installation
 echo "reboot now  ----------------------------------"
 sudo reboot
