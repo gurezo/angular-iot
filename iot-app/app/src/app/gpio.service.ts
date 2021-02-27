@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-// import { GPIOAccess } from 'node-web-gpio';
+import { GPIOAccess } from 'node-web-gpio';
 
 // declare var require: any;
 // const { requestGPIOAccess } = require('node-web-gpio');
