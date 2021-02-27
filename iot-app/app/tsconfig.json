@@ -20,8 +20,11 @@
       "es2018",
       "dom"
     ],
+    "types": [
+      "node"
+    ],
     "typeRoots" : [
-      "node_modules/node-web-gpio/dist"
+      "node_modules/@types",
     ]
   },
   "angularCompilerOptions": {
