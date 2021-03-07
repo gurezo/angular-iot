@@ -34,7 +34,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/@chirimen-raspi/polyfill/polyfill.js"
+              "node_modules/node-web-gpio/dist/index.js",
+              "node_modules/node-web-i2c/index.js"
             ]
           },
           "configurations": {
