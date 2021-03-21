@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
-// import { GPIOAccess } from '@chirimen-raspi/polyfill';
+import { GPIOAccess } from 'node-web-gpio/dist';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GpioService {
 
-  gpioAccess: any;
+  // gpioAccess: GPIOAccess;
 
-  constructor() {}
+  constructor() {
+    // this.gpioAccess = new GPIOAccess();
+  }
 
   // FIXME: rxjs で、ストリームを作成して、流す
 
