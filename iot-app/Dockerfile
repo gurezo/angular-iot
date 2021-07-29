@@ -5,8 +5,8 @@
 # 12.20.0 は開発で使用しているバージョン
 FROM node:12.20.2 as build-stage
 
-WORKDIR /app
-COPY ./app/package*.json /app/
+WORKDIR /front
+COPY ./front/package*.json /front/
 
 # npm install 中に下記 Warning がでるが回避策が現状見当たらないので放置するしかない
 # 内容はプラットフォームが Mac OSX ではないからスキップするというもので、
@@ -17,7 +17,7 @@ COPY ./app/package*.json /app/
 #   npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.6: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
 
 RUN npm install
-COPY ./app/ /app/
+COPY ./front/ /front/
 ARG configuration=production
 
 # Angular アプリをビルドする
@@ -29,7 +29,7 @@ RUN npm run build -- --output-path=./dist/out --configuration $configuration
 FROM nginx:1.15
 
 # ビルドした成果物を Docker 上の Nginx のドキュメントとして扱うためにコピー(デプロイ)
-COPY --from=build-stage /app/dist/out/ /usr/share/nginx/html
+COPY --from=build-stage /front/dist/out/ /usr/share/nginx/html
 
 # Nginx の設定ファイルを Docker 上の Nginx にコピー
 COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
