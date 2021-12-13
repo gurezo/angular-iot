@@ -2,7 +2,13 @@
   <caption></caption>
   <figure>
     <figcaption>ハードウェア接続イメージ図</figcaption>
-    <img src="https://tutorial.chirimen.org/raspi/imgs/section0/browser.png" alt="LED→GPIO-26">
+    <img
+      src="https://tutorial.chirimen.org/raspi/imgs/section0/browser.png"
+      alt="LED→GPIO-26"
+    />
   </figure>
-  <button (click)="onClick();">{{title}}</button>
+  <div>
+    <button (click)="onClickAuto()">{{ title }}</button>
+    <button (click)="onClickManual()">手動操作</button>
+  </div>
 </div>
