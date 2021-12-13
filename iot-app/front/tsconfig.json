@@ -25,6 +25,7 @@
     ],
     "typeRoots" : [
       "node_modules/@types",
+      "node_modules/node-web-gpio/dist/index.d.ts"
     ]
   },
   "exclude": [
