@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-declare var require: any;
-const requestGPIOAccess = require('node-web-gpio');
+// declare var require: any;
+// const requestGPIOAccess = require('node-web-gpio');
+import { requestGPIOAccess } from 'node-web-gpio';
 
 @Component({
   selector: 'ngiot-root',
