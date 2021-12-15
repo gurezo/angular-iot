@@ -2,8 +2,8 @@
 # Angular アプリをビルドするための環境を構築する
 # -----------------------------------------------------
 # Angualr のビルドする環境として node をインストール
-# 12.20.0 は開発で使用しているバージョン
-FROM node:12.20.2 as build-stage
+# 16.13.1 は開発で使用しているバージョン
+FROM node:16.13.1 as build-stage
 
 WORKDIR /front
 COPY ./front/package*.json /front/
