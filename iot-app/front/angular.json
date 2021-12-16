@@ -27,7 +27,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": ["src/assets/lib/node-web-gpio.js"],
+            "scripts": ["src/assets/lib/node-web-gpio.umd.js"],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
