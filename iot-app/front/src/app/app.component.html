@@ -8,7 +8,29 @@
     />
   </figure>
   <div>
-    <button (click)="onClickAuto()">{{ title }}</button>
-    <button (click)="onClickManual()">手動操作</button>
+    <p>
+      <input
+        type="radio"
+        name="自動モード"
+        id="auto"
+        [checked]="isAuto"
+        (click)="onClickMode(true)"
+      />
+      <label for="auto">自動モード</label>
+
+      <input
+        type="radio"
+        name="手動モード"
+        id="manual"
+        [checked]="!isAuto"
+        (click)="onClickMode(false)"
+      />
+      <label for="manual">手動モード</label>
+    </p>
+  </div>
+  <div>
+    <button (click)="onClickAutoStart()" [disabled]="!isAuto">自動開始</button>
+    <button (click)="onClickAutoStop()" [disabled]="!isAuto">自動停止</button>
+    <button (click)="onClickManual()" [disabled]="isAuto">手動操作</button>
   </div>
 </div>

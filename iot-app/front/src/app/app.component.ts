@@ -21,12 +21,15 @@ export class AppComponent implements OnInit {
   /** setInterval 用ID */
   nodeInterval: NodeJS.Timeout | null;
 
+  isAuto = true;
+
   constructor() {
     this.nodeInterval = null;
   }
 
   async ngOnInit() {
     this.isLedBlink = false;
+    this.isAuto = true;
     this.gpioAccess = await requestGPIOAccess();
     // GPIOピン割当
     this.port = this.gpioAccess.ports.get(26);
@@ -34,12 +37,20 @@ export class AppComponent implements OnInit {
     await this.port?.export('out');
   }
 
-  onClickAuto() {
+  onClickAutoStart() {
     this.isLedBlink ? this.stopNodeInterval() : this.startNodeInterval();
+  }
+
+  onClickAutoStop() {
+    this.stopNodeInterval();
   }
 
   onClickManual() {
     //
+  }
+
+  onClickMode(mode: boolean) {
+    this.isAuto = mode;
   }
 
   private startNodeInterval() {
