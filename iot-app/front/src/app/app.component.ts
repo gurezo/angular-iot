@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     await this.port?.export('out');
   }
 
-  async onClickAuto() {
+  onClickAuto() {
     this.isLedBlink ? this.stopNodeInterval() : this.startNodeInterval();
   }
 
