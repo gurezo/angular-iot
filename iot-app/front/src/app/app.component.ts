@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   port: GPIOPort | undefined;
 
   /** ボタンタイトル */
-  title = '停止中';
+  labelBlink = '';
   /** LED点灯フラグ */
   isLedBlink = false;
   /** setInterval 用ID */
@@ -32,22 +32,34 @@ export class AppComponent implements OnInit {
   async ngOnInit() {
     this.isLedBlink = false;
     this.isAuto = true;
+    this.labelBlink = 'LED消灯';
     await this.connectRaspberryPi();
   }
 
+  /**
+   * 自動LED点滅・点灯開始
+   */
   onClickAutoStart() {
     this.startNodeInterval();
   }
 
+  /**
+   * 自動LED点滅・点灯終了
+   */
   onClickAutoStop() {
     this.stopNodeInterval();
   }
 
+  /**
+   * 手動LED点滅・点灯
+   */
   async onClickManual() {
-    this.isLedBlink = !this.isLedBlink;
     this.blinkLED();
   }
 
+  /**
+   * Raspberry Pi 手動接続
+   */
   async onClickManualConnect() {
     await this.connectRaspberryPi();
   }
@@ -72,6 +84,8 @@ export class AppComponent implements OnInit {
    * LED点灯処理
    */
   private async blinkLED() {
+    this.isLedBlink = !this.isLedBlink;
+    this.labelBlink = this.isLedBlink ? 'LED点灯中' : 'LED消灯';
     this.isLedBlink ? await this.port?.write(1) : await this.port?.write(0);
   }
 
@@ -91,9 +105,7 @@ export class AppComponent implements OnInit {
    */
   private startNodeInterval() {
     this.nodeInterval = setInterval(async () => {
-      this.isLedBlink = !this.isLedBlink;
-      this.title = this.isLedBlink ? 'Lチカなう' : '停止中';
-      await this.blinkLED;
+      await this.blinkLED();
     }, 1000);
   }
 

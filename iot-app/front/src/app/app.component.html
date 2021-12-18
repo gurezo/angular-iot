@@ -1,6 +1,7 @@
 <div>
-  <span *ngIf="isConnectError">Raspberry Pi に接続できません</span>
-  <caption></caption>
+  <span *ngIf="isConnectError" class="connect-error"
+    >Raspberry Pi に接続できません</span
+  >
   <figure>
     <figcaption>ハードウェア接続イメージ図</figcaption>
     <img
@@ -8,6 +9,14 @@
       alt="LED→GPIO-26"
     />
   </figure>
+  <div>
+    <span
+      class="blink"
+      [class.blink-on]="isLedBlink"
+      [class.blink-off]="!isLedBlink"
+      >{{ labelBlink }}</span
+    >
+  </div>
   <div>
     <p>
       <input
