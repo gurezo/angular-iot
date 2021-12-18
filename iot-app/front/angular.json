@@ -27,14 +27,19 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": ["src/assets/lib/node-web-gpio.umd.js"],
+            "scripts": ["node_modules/node-web-gpio/dist/index.js"],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
             "namedChunks": true,
-            "allowedCommonJsDependencies": ["node-web-gpio"]
+            "allowedCommonJsDependencies": [
+              "node-web-gpio",
+              "events",
+              "fs",
+              "path"
+            ]
           },
           "configurations": {
             "production": {
