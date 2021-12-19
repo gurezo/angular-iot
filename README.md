@@ -14,3 +14,4 @@ this is angular, chirimen, docker, raspberry pi IoT sample.
 - Raspberry Pi 4 Model B/4GB
 - SanDisk microSDHC 98MB/s 16GB Ultra SDSQUAR-016G
 - SanDisk microSDHC 98MB/s 32GB Ultra SDSQUAR-032G-GN6MA
+- [NexDock](https://nexdock.com/raspberrypi-laptop/)
