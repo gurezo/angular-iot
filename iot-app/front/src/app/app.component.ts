@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
     this.isAuto = true;
     this.labelBlink = 'LED消灯';
     await this.connectRaspberryPi();
+    console.log('%cStop!', 'font-size: 100px; color: red; font-weight: bold');
   }
 
   /**
