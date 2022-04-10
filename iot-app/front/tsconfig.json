@@ -2,7 +2,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -16,21 +15,15 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
-    "types": [
-      "node"
-    ],
-    "typeRoots" : [
-      "node_modules/@types",
-      "node_modules/node-web-gpio/dist/index.d.ts"
-    ]
+    "lib": ["es2020", "dom"],
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": "src",
+    "paths": {
+      "@chirimen-ts/*": ["chirimen-api/dist/api/*"]
+    }
   },
-  "exclude": [
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
