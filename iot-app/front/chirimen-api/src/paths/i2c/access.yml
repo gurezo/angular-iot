@@ -1,0 +1,14 @@
+post:
+  summary: I2C Access
+  operationId: i2cAccess
+  tags:
+    - i2c
+  responses:
+    "200":
+      description: A I2C Access OK
+    # default:
+    #   description: unexpected error
+    #   content:
+    #     application/json:
+    #       schema:
+    #         $ref: ../../components/error/error.yml

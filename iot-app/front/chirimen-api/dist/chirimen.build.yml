@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  version: 1.0.0
+  title: chirimen api server for raspberry pi
+  license:
+    name: MIT
+paths:
+  /gpio/access:
+    post:
+      summary: GPIO Access
+      operationId: gpioAccess
+      tags:
+        - gpio
+      responses:
+        '200':
+          description: 200 response
+  /gpio/port-write:
+    post:
+      summary: GPIO Port Write
+      operationId: gpioPortWrite
+      tags:
+        - gpio
+      parameters:
+        - name: writeValue
+          in: query
+          description: write value
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 200 response
+  /gpio/ports-get:
+    get:
+      summary: GPIO Port Get
+      operationId: gpioPortsGet
+      tags:
+        - gpio
+      parameters:
+        - name: portNumber
+          in: query
+          description: port number
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 200 response

@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  version: 1.0.0
+  title: chirimen api server for raspberry pi
+  license:
+    name: MIT
+
+paths:
+  /gpio/access:
+    $ref: ./paths/gpio/access.yml
+  # /gpio/port-read:
+  #   $ref: ./paths/gpio/port-read.yml
+  /gpio/port-write:
+    $ref: ./paths/gpio/port-write.yml
+  /gpio/ports-get:
+    $ref: ./paths/gpio/ports-get.yml
+# /i2c/access:
+#   $ref: ./paths/i2c/access.yml
+# /i2c/ports-get:
+#   $ref: ./paths/i2c/ports-get.yml
+# components:
+#   schemas:
+#     error:
+#       $ref: ./components/error/error.yml

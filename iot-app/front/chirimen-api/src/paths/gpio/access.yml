@@ -1,0 +1,15 @@
+post:
+  summary: GPIO Access
+  operationId: gpioAccess
+  tags:
+    - gpio
+  responses:
+    "200":
+      description: |-
+        200 response
+    # default:
+    #   description: unexpected error
+    #   content:
+    #     application/json:
+    #       schema:
+    #         $ref: ../../components/error/error.yml

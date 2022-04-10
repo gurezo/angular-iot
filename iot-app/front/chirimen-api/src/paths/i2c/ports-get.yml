@@ -1,0 +1,21 @@
+get:
+  summary: I2C
+  operationId: i2cPortsGet
+  tags:
+    - i2c
+  parameters:
+    - name: portNumber
+      in: query
+      description: port number
+      required: true
+      schema:
+        type: integer
+        format: int32
+  responses:
+    "200":
+    # default:
+    #   description: unexpected error
+    #   content:
+    #     application/json:
+    #       schema:
+    #         $ref: ../../components/error/error.yml
