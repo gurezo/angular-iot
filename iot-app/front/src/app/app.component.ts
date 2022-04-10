@@ -10,16 +10,12 @@ export class AppComponent implements OnInit {
   labelBlink = '';
   /** LED点灯フラグ */
   isLedBlink = false;
-  /** setInterval 用ID */
-  nodeInterval: NodeJS.Timeout | null;
   /** 自動フラグ */
   isAuto = true;
   /** Raspberry Pi 接続エラーフラグ */
   isConnectError = false;
 
-  constructor() {
-    this.nodeInterval = null;
-  }
+  constructor() {}
 
   async ngOnInit() {
     this.isLedBlink = false;
@@ -81,11 +77,7 @@ export class AppComponent implements OnInit {
   /**
    * LED自動点灯タイマー開始
    */
-  private startNodeInterval() {
-    this.nodeInterval = setInterval(async () => {
-      await this.blinkLED();
-    }, 1000);
-  }
+  private startNodeInterval() {}
 
   /**
    * LED自動点灯タイマー停止
