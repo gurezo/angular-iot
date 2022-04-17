@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
+import { finalize, Subject, takeUntil } from 'rxjs';
 import { AppService } from './app.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { AppService } from './app.service';
 })
 export class AppComponent implements OnInit {
   /** ボタンタイトル */
-  labelBlink = '';
+  labelBlink = '消灯';
   /** LED点灯フラグ */
   isLedBlink = false;
   /** 自動フラグ */
@@ -31,22 +31,19 @@ export class AppComponent implements OnInit {
   private init() {
     this.service
       .init(16)
-      .pipe(takeUntil(this.destroy))
+      .pipe(
+        takeUntil(this.destroy),
+        finalize(() => {
+          // this.isLedBlink = false;
+          // this.isAuto = true;
+        })
+      )
       .subscribe({
-        next: () => {
+        next: () => this.service.logger('OK !!!', 'blue'),
+        error: (error) => this.service.logger('Stop!', 'red', error),
+        complete: () => {
           this.isLedBlink = false;
           this.isAuto = true;
-          console.log(
-            '%cOK !!!',
-            'font-size: 100px; color: blue; font-weight: bold'
-          );
-        },
-        error: (error) => {
-          console.log(
-            '%cStop!',
-            'font-size: 100px; color: red; font-weight: bold',
-            error
-          );
         },
       });
   }

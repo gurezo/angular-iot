@@ -27,4 +27,12 @@ export class AppService {
   // gpioPortsGet(portNumber: number): Observable<any> {
   //   return this.chirimen.gpioPortsGet(portNumber);
   // }
+
+  logger(messase: string, labelColor: string, errorInfo?: any): void {
+    console.log(
+      `%c${messase}!`,
+      `font-size: 100px; color: ${labelColor}; font-weight: bold`,
+      errorInfo
+    );
+  }
 }
