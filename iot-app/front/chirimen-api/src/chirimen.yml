@@ -5,6 +5,9 @@ info:
   license:
     name: MIT
 
+servers:
+  - url: https://localhost:8000
+
 paths:
   /gpio/access:
     $ref: ./paths/gpio/access.yml

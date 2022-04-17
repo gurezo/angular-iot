@@ -4,6 +4,8 @@ info:
   title: chirimen api server for raspberry pi
   license:
     name: MIT
+servers:
+  - url: 'https://localhost:8000'
 paths:
   /gpio/access:
     post:
