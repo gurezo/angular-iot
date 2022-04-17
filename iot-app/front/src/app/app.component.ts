@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject, takeUntil } from 'rxjs';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'ngiot-root',
@@ -15,12 +17,38 @@ export class AppComponent implements OnInit {
   /** Raspberry Pi 接続エラーフラグ */
   isConnectError = false;
 
-  constructor() {}
+  private destroy = new Subject<void>();
+
+  constructor(private service: AppService) {}
 
   async ngOnInit() {
-    this.isLedBlink = false;
-    this.isAuto = true;
-    console.log('%cStop!', 'font-size: 100px; color: red; font-weight: bold');
+    this.init();
+    // this.isLedBlink = false;
+    // this.isAuto = true;
+    // console.log('%cStop!', 'font-size: 100px; color: red; font-weight: bold');
+  }
+
+  private init() {
+    this.service
+      .init(16)
+      .pipe(takeUntil(this.destroy))
+      .subscribe({
+        next: () => {
+          this.isLedBlink = false;
+          this.isAuto = true;
+          console.log(
+            '%cOK !!!',
+            'font-size: 100px; color: blue; font-weight: bold'
+          );
+        },
+        error: (error) => {
+          console.log(
+            '%cStop!',
+            'font-size: 100px; color: red; font-weight: bold',
+            error
+          );
+        },
+      });
   }
 
   /**

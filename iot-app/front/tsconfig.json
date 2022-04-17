@@ -20,7 +20,7 @@
     "typeRoots": ["node_modules/@types"],
     "baseUrl": "src",
     "paths": {
-      "@chirimen-ts/*": ["chirimen-api/dist/api/*"]
+      "@chirimen-api/*": ["chirimen-api/dist/api/*"]
     }
   },
   "exclude": ["node_modules"],
