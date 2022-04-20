@@ -23,9 +23,6 @@ export class AppComponent implements OnInit {
 
   async ngOnInit() {
     this.init();
-    // this.isLedBlink = false;
-    // this.isAuto = true;
-    // console.log('%cStop!', 'font-size: 100px; color: red; font-weight: bold');
   }
 
   private init() {
@@ -34,17 +31,14 @@ export class AppComponent implements OnInit {
       .pipe(
         takeUntil(this.destroy),
         finalize(() => {
-          // this.isLedBlink = false;
-          // this.isAuto = true;
+          this.isLedBlink = false;
+          this.isAuto = true;
         })
       )
       .subscribe({
         next: () => this.service.logger('OK !!!', 'blue'),
         error: (error) => this.service.logger('Stop!', 'red', error),
-        complete: () => {
-          this.isLedBlink = false;
-          this.isAuto = true;
-        },
+        complete: () => {},
       });
   }
 
