@@ -23,7 +23,7 @@
     "@angular/router": "^14.1.0",
     "rxjs": "~7.5.6",
     "tslib": "^2.4.0",
-    "zone.js": "~0.11.6"
+    "zone.js": "~0.11.7"
   },
   "devDependencies": {
     "@angular-devkit/architect": "^0.1401.0",
@@ -32,9 +32,9 @@
     "@angular/compiler-cli": "^14.1.0",
     "@openapitools/openapi-generator-cli": "^2.5.1",
     "@types/jasmine": "~4.0.3",
-    "@types/node": "^18.0.3",
+    "@types/node": "^18.6.2",
     "codelyzer": "^6.0.2",
-    "jasmine-core": "~4.2.0",
+    "jasmine-core": "~4.3.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.1",
@@ -46,7 +46,7 @@
     "protractor": "~7.0.0",
     "stream": "0.0.2",
     "swagger-cli": "^4.0.4",
-    "ts-node": "~10.8.2",
+    "ts-node": "~10.9.1",
     "tslint": "~6.1.0",
     "typescript": "~4.7.4"
   },
