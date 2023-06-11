@@ -19,7 +19,7 @@ sudo apt-get -y autoclean
 # curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 # https://github.com/nodesource/distributions 参照
 echo "npm, node install  ----------------------------------"
-nodeVer=16
+nodeVer=18
 nodeInstallCmd=`curl -sL https://deb.nodesource.com/setup_${nodeVer}.x | sudo -E bash -`
 eval ${nodeInstallCmd}
 sudo apt install nodejs -y
