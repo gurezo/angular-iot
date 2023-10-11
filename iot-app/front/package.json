@@ -23,7 +23,7 @@
     "@angular/router": "^16.2.8",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
-    "zone.js": "~0.13.3"
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
     "@angular-devkit/architect": "^0.1602.6",
@@ -31,7 +31,7 @@
     "@angular/cli": "^16.2.6",
     "@angular/compiler-cli": "^16.2.8",
     "@openapitools/openapi-generator-cli": "^2.7.0",
-    "@types/jasmine": "~4.3.5",
+    "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.4",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~5.1.1",
