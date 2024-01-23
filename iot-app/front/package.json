@@ -30,9 +30,9 @@
     "@angular-devkit/build-angular": "^17.1.0",
     "@angular/cli": "^17.1.0",
     "@angular/compiler-cli": "^17.1.0",
-    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "@openapitools/openapi-generator-cli": "^2.9.0",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^20.11.0",
+    "@types/node": "^20.11.5",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~5.1.1",
     "jasmine-spec-reporter": "~7.0.0",
@@ -48,7 +48,7 @@
     "swagger-cli": "^4.0.4",
     "ts-node": "~10.9.2",
     "tslint": "~6.1.0",
-    "typescript": "5.2.2"
+    "typescript": "5.3.3"
   },
   "browser": {
     "fs": false
