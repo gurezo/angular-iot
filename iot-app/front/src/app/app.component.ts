@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize, Subject, takeUntil } from 'rxjs';
 import { AppService } from './app.service';
+import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'ngiot-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'ngiot-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: true,
+    imports: [NgIf],
 })
 export class AppComponent implements OnInit {
   /** ボタンタイトル */
