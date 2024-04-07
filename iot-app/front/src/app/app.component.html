@@ -1,59 +1,63 @@
 <div>
-  <span *ngIf="isConnectError" class="connect-error"
-    >Raspberry Pi に接続できません</span
-  >
-  <figure>
-    <figcaption>ハードウェア接続イメージ図</figcaption>
-    <img
-      src="https://tutorial.chirimen.org/raspi/imgs/section0/browser.png"
-      alt="LED→GPIO-26"
-    />
-  </figure>
-  <div>
-    <span
-      class="blink"
-      [class.blink-on]="isLedBlink"
-      [class.blink-off]="!isLedBlink"
-      >{{ labelBlink }}</span
-    >
-  </div>
-  <div>
-    <p>
-      <input
-        type="radio"
-        name="自動モード"
-        id="auto"
-        [checked]="isAuto"
-        [disabled]="isConnectError"
-        (click)="onClickMode(true)"
-      />
-      <label for="auto">自動モード</label>
+  @if (isConnectError) {
+    <span class="connect-error"
+      >Raspberry Pi に接続できません</span
+      >
+    }
+    <figure>
+      <figcaption>ハードウェア接続イメージ図</figcaption>
+      <img
+        src="https://tutorial.chirimen.org/raspi/imgs/section0/browser.png"
+        alt="LED→GPIO-26"
+        />
+    </figure>
+    <div>
+      <span
+        class="blink"
+        [class.blink-on]="isLedBlink"
+        [class.blink-off]="!isLedBlink"
+        >{{ labelBlink }}</span
+        >
+      </div>
+      <div>
+        <p>
+          <input
+            type="radio"
+            name="自動モード"
+            id="auto"
+            [checked]="isAuto"
+            [disabled]="isConnectError"
+            (click)="onClickMode(true)"
+            />
+          <label for="auto">自動モード</label>
 
-      <input
-        type="radio"
-        name="手動モード"
-        id="manual"
-        [checked]="!isAuto"
-        [disabled]="isConnectError"
-        (click)="onClickMode(false)"
-      />
-      <label for="manual">手動モード</label>
-    </p>
-  </div>
-  <div>
-    <button (click)="onClickAutoStart()" [disabled]="!isAuto || isConnectError">
-      自動開始
-    </button>
-    <button (click)="onClickAutoStop()" [disabled]="!isAuto || isConnectError">
-      自動停止
-    </button>
-    <button (click)="onClickManual()" [disabled]="isAuto || isConnectError">
-      手動操作
-    </button>
-  </div>
-  <div>
-    <button (click)="onClickManualConnect()" *ngIf="isConnectError">
-      Raspberry Pi に接続
-    </button>
-  </div>
-</div>
+          <input
+            type="radio"
+            name="手動モード"
+            id="manual"
+            [checked]="!isAuto"
+            [disabled]="isConnectError"
+            (click)="onClickMode(false)"
+            />
+          <label for="manual">手動モード</label>
+        </p>
+      </div>
+      <div>
+        <button (click)="onClickAutoStart()" [disabled]="!isAuto || isConnectError">
+          自動開始
+        </button>
+        <button (click)="onClickAutoStop()" [disabled]="!isAuto || isConnectError">
+          自動停止
+        </button>
+        <button (click)="onClickManual()" [disabled]="isAuto || isConnectError">
+          手動操作
+        </button>
+      </div>
+      <div>
+        @if (isConnectError) {
+          <button (click)="onClickManualConnect()">
+            Raspberry Pi に接続
+          </button>
+        }
+      </div>
+    </div>
