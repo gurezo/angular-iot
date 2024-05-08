@@ -32,7 +32,7 @@
     "@angular/compiler-cli": "^17.3.7",
     "@openapitools/openapi-generator-cli": "^2.13.4",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^20.12.8",
+    "@types/node": "^20.12.11",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~5.1.2",
     "jasmine-spec-reporter": "~7.0.0",
