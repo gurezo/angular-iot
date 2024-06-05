@@ -26,9 +26,9 @@
     "zone.js": "~0.14.6"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "^0.1800.1",
-    "@angular-devkit/build-angular": "^18.0.1",
-    "@angular/cli": "^18.0.1",
+    "@angular-devkit/architect": "^0.1800.2",
+    "@angular-devkit/build-angular": "^18.0.2",
+    "@angular/cli": "^18.0.2",
     "@angular/compiler-cli": "^18.0.0",
     "@openapitools/openapi-generator-cli": "^2.13.4",
     "@types/jasmine": "~5.1.4",
