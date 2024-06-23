@@ -43,14 +43,14 @@ importers:
         version: 0.14.6
     devDependencies:
       '@angular-devkit/architect':
-        specifier: ^0.1800.2
-        version: 0.1800.2(chokidar@3.6.0)
+        specifier: ^0.1800.5
+        version: 0.1800.5(chokidar@3.6.0)
       '@angular-devkit/build-angular':
-        specifier: ^18.0.2
-        version: 18.0.2(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(karma@6.4.3)(protractor@7.0.0)(typescript@5.4.5)
+        specifier: ^18.0.5
+        version: 18.0.5(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(karma@6.4.3)(protractor@7.0.0)(typescript@5.4.5)
       '@angular/cli':
-        specifier: ^18.0.2
-        version: 18.0.2(chokidar@3.6.0)
+        specifier: ^18.0.5
+        version: 18.0.5(chokidar@3.6.0)
       '@angular/compiler-cli':
         specifier: ^18.0.1
         version: 18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5)
@@ -112,12 +112,12 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@angular-devkit/architect@0.1800.2':
-    resolution: {integrity: sha512-PX7lCTAqWe9C40+fie+DAc8vhpGA+JgZKWWrMHUTV/iZx8RXx2X4xGQsqYu36p4i3MSfQdbn+0xLWGmjScPVOQ==}
+  '@angular-devkit/architect@0.1800.5':
+    resolution: {integrity: sha512-KliFJTqwAIyRvW10JnJLlpXK86yx683unTgwgvkg9V4gUc/7cNCmWJiOCmYh1+gATpFq+3d3o36EdTzb4QS03g==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
 
-  '@angular-devkit/build-angular@18.0.2':
-    resolution: {integrity: sha512-cQkTx7XaIPj6+DXo6wZmO4iY0hOOfPDnSN/+m84XpBW0tuPGxH7Z9B6wV+Uwcpm9HGPqzRA7VZyPsqbK860b0Q==}
+  '@angular-devkit/build-angular@18.0.5':
+    resolution: {integrity: sha512-itZN5tAZ+66bHZ4JNxIiPxfbSvQP6Gk4hcCzfGzcs3G0VsahR0rpX0Rg+1CRX1bpDzan3z8AVfwIxlLPKSOBbg==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       '@angular/compiler-cli': ^18.0.0
@@ -157,15 +157,15 @@ packages:
       tailwindcss:
         optional: true
 
-  '@angular-devkit/build-webpack@0.1800.2':
-    resolution: {integrity: sha512-CbTURBhZWzx+5KewS2Nkqy2rwBTFgDCvUwONGWuy1K68+85vOWUKqjkfvriHA+JkWN03w7FzWEtTfcOg0EzYkw==}
+  '@angular-devkit/build-webpack@0.1800.5':
+    resolution: {integrity: sha512-/eiIwlQJBZlCWLsfaoSOsSGFY24cLKCCY4fs/fvcBXxG5/g1FFx24Zt73j0qRoNeK3soUg9+lmCAiRvO6cGpJg==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       webpack: ^5.30.0
       webpack-dev-server: ^5.0.2
 
-  '@angular-devkit/core@18.0.2':
-    resolution: {integrity: sha512-QXcEdfmODc0rKblBerk30yw70fypIkFm6gQBLJgsshpwc+TMA+fuMLcPQebOTzKLtD2tNUkk/7SrWPQIGqeXaA==}
+  '@angular-devkit/core@18.0.5':
+    resolution: {integrity: sha512-sGtrS0SqkcBvyuv0QkIfyadwPgDhMroz1r51lMh1hwzJaJ0LNuVMLviEeYIybeBnvAdp9YvYC8I1WgB/FUEFBw==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       chokidar: ^3.5.2
@@ -173,8 +173,8 @@ packages:
       chokidar:
         optional: true
 
-  '@angular-devkit/schematics@18.0.2':
-    resolution: {integrity: sha512-G9yGcoB67sH0eRNWoiQWNn2KwiI7sDasVscYPGKf1yo7JRiXmzX/LpfKRPsZTl+Bs0FItnwDInsqgMisK89/6g==}
+  '@angular-devkit/schematics@18.0.5':
+    resolution: {integrity: sha512-hZwAq3hwuJzCuh7uqO/7T9IMERhYVxz+ganJlEykpyr58o0IjUM1Q4ZSH5UOYlGRPdBCZJbfiafZ0Sg5w5xBww==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
 
   '@angular/animations@18.0.1':
@@ -183,8 +183,8 @@ packages:
     peerDependencies:
       '@angular/core': 18.0.1
 
-  '@angular/build@18.0.2':
-    resolution: {integrity: sha512-iPPHdAJ3LiR8t/+39xjvrqMWcTmRrfphzKxXoIVDcswQjVQIk00EYuxinC6EVa7dSKDl1thk1MeCNZ9DIjaAvQ==}
+  '@angular/build@18.0.5':
+    resolution: {integrity: sha512-6C+azPDYqPWX9/+53OTyvzmAKxrGwgQcDnueC/Sc6NZJOAs2VsOIn5ULPtcRDlrf/Rbo0dGM4OvKCM2q1BRuBg==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       '@angular/compiler-cli': ^18.0.0
@@ -209,8 +209,8 @@ packages:
       tailwindcss:
         optional: true
 
-  '@angular/cli@18.0.2':
-    resolution: {integrity: sha512-shrxMD1bcWWh7WpBN3KTV+Lt8E62gURSUFhs6kdGLepMDif8LPAv45+hpt8SBU9VfQuL6AHa4cW8uDL9BKGlYA==}
+  '@angular/cli@18.0.5':
+    resolution: {integrity: sha512-w3NOdj6T7QhBmFleavc+AEhcAMyPkt7RsyWW2saufD6x55gzynGQZb9UBZwKDUAR6UtqchBX/HEBWCLNnjbiHg==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
 
@@ -1240,10 +1240,6 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@istanbuljs/load-nyc-config@1.1.0':
-    resolution: {integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==}
-    engines: {node: '>=8'}
-
   '@istanbuljs/schema@0.1.3':
     resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
     engines: {node: '>=8'}
@@ -1401,8 +1397,8 @@ packages:
       '@nestjs/websockets':
         optional: true
 
-  '@ngtools/webpack@18.0.2':
-    resolution: {integrity: sha512-I+ZNFGBnykUWBwGPCXy6m9R2fIX/ovnAUHylvThYd/M+FUfc+Z/3DpKEUBYIOLVCLNZR5nuK0t9QLlazYhWFgg==}
+  '@ngtools/webpack@18.0.5':
+    resolution: {integrity: sha512-Dx386WZZn0RwUaBHQYhDW8oi254SxEu8Ty5LHnStqBP6xXdcnsdGel+h9qvJ67He9iu8Rj0PB64EFE4PiklMdQ==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       '@angular/compiler-cli': ^18.0.0
@@ -1547,8 +1543,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@schematics/angular@18.0.2':
-    resolution: {integrity: sha512-qkJs1oxHtneJ6QxDKpxNyneXGDM9SKVj+Bgi8xUAU3FEzpsYmE/aW3MfwYHOZl0pDBO8c2raqLvlyl3dGP6/Gg==}
+  '@schematics/angular@18.0.5':
+    resolution: {integrity: sha512-dV50GIEGl6S5wE6xtAhmHWdLhsOlnNUpAx/v3BPR2AOr90zJvIM03TqAQTzAlnPatxK2WLelRgqVMbPfAVvLAg==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
 
   '@sigstore/bundle@2.2.0':
@@ -1966,10 +1962,6 @@ packages:
     peerDependencies:
       '@babel/core': ^7.12.0
       webpack: '>=5'
-
-  babel-plugin-istanbul@6.1.1:
-    resolution: {integrity: sha512-Y1IQok9821cC9onCx5otgFfRm7Lm+I+wwxOx738M/WLPZ9Q42m4IG5W0FNX8WLL2gYMZo3JkuXIH2DOpWM+qwA==}
-    engines: {node: '>=8'}
 
   babel-plugin-polyfill-corejs2@0.4.10:
     resolution: {integrity: sha512-rpIuu//y5OX6jVU+a5BCn1R5RSZYWAl2Nar76iwaOdycqb6JPxediskWFMMl7stfwNJR4b7eiQvh5fB5TEQJTQ==}
@@ -2830,10 +2822,6 @@ packages:
     resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
     engines: {node: '>= 0.4'}
 
-  get-package-type@0.1.0:
-    resolution: {integrity: sha512-pjzuKtY64GYfWizNAJ0fr9VqttZkNiK2iS430LtIHzjBEr6bX8Am2zm4sW4Ro5wjWW5cAlRL1qAMTcXbjNAO2Q==}
-    engines: {node: '>=8.0.0'}
-
   get-stream@4.1.0:
     resolution: {integrity: sha512-GMat4EJ5161kIy2HevLlr4luNjBgvmj413KaQA7jt4V8B4RDsfpHk7WQ9GVqfYyyx8OS/L66Kox+rJRNklLK7w==}
     engines: {node: '>=6'}
@@ -3223,6 +3211,10 @@ packages:
   istanbul-lib-instrument@5.2.1:
     resolution: {integrity: sha512-pzqtp31nLv/XFOzXGuvhCb8qhjmTVo5vjVk19XE4CRlSWz0KoeJ3bw9XsA7nOp9YBf4qHjwBxkDzKcME/J29Yg==}
     engines: {node: '>=8'}
+
+  istanbul-lib-instrument@6.0.2:
+    resolution: {integrity: sha512-1WUsZ9R1lA0HtBSohTkm39WTPlNKSJ5iFk7UwqXkBLoHQT+hfqPsfsTDVuZdKGaBwn7din9bS7SsnoAr943hvw==}
+    engines: {node: '>=10'}
 
   istanbul-lib-report@3.0.1:
     resolution: {integrity: sha512-GCfE1mtsHGOELCU8e/Z7YWzpmybrx/+dSTfLrvY8qRmaY6zXTKWn6WQIjaAFw069icm6GVMNkgu0NzI4iPZUNw==}
@@ -4138,6 +4130,10 @@ packages:
   q@1.4.1:
     resolution: {integrity: sha512-/CdEdaw49VZVmyIDGUQKDDT53c7qBkO6g5CefWz91Ae+l4+cRtcDYwMTXh6me4O8TMldeGHG3N2Bl84V78Ywbg==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 
   qjobs@1.2.0:
     resolution: {integrity: sha512-8YOJEHtxpySA3fFDyCRxA+UUV+fA+rTWnuWvylOK/NCjhY+b4ocCtmu8TtsWb+mYeU+GCHf/S66KZF/AsteKHg==}
@@ -4235,10 +4231,6 @@ packages:
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
-
-  resolve-from@5.0.0:
-    resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
-    engines: {node: '>=8'}
 
   resolve-url-loader@5.0.0:
     resolution: {integrity: sha512-uZtduh8/8srhBoMx//5bwqjQ+rfYOUq8zC9NrMUGtjBiGTtFJM42s58/36+hTqeqINcnYe08Nj3LkK9lW4N8Xg==}
@@ -4694,10 +4686,6 @@ packages:
     resolution: {integrity: sha512-Q1JFAoUKE5IMfI4Z/lkE/E6+SwgzO+x4tq4v1AyBLRj8VSYvRO6A/rQrPg1yud4g0En9EKI1TvFRF2tQFcoUkg==}
     engines: {node: '>=10'}
     hasBin: true
-
-  test-exclude@6.0.0:
-    resolution: {integrity: sha512-cAGWPIyOHU6zlmg88jwm7VRyXnMN7iV68OGAbYDk/Mh/xC/pzVPlQtY6ngoIH/5/tciuhGfvESU8GrHrcxD56w==}
-    engines: {node: '>=8'}
 
   thingies@1.21.0:
     resolution: {integrity: sha512-hsqsJsFMsV+aD4s3CWKk85ep/3I9XzYV/IXaSouJMYIoDlgyi11cBhsqYe9/geRfB0YIikBQg6raRaM+nIMP9g==}
@@ -5167,20 +5155,20 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@angular-devkit/architect@0.1800.2(chokidar@3.6.0)':
+  '@angular-devkit/architect@0.1800.5(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/core': 18.0.2(chokidar@3.6.0)
+      '@angular-devkit/core': 18.0.5(chokidar@3.6.0)
       rxjs: 7.8.1
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-angular@18.0.2(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(karma@6.4.3)(protractor@7.0.0)(typescript@5.4.5)':
+  '@angular-devkit/build-angular@18.0.5(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(karma@6.4.3)(protractor@7.0.0)(typescript@5.4.5)':
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular-devkit/architect': 0.1800.2(chokidar@3.6.0)
-      '@angular-devkit/build-webpack': 0.1800.2(chokidar@3.6.0)(webpack-dev-server@5.0.4(webpack@5.91.0(esbuild@0.21.3)))(webpack@5.91.0(esbuild@0.21.3))
-      '@angular-devkit/core': 18.0.2(chokidar@3.6.0)
-      '@angular/build': 18.0.2(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(terser@5.31.0)(typescript@5.4.5)
+      '@angular-devkit/architect': 0.1800.5(chokidar@3.6.0)
+      '@angular-devkit/build-webpack': 0.1800.5(chokidar@3.6.0)(webpack-dev-server@5.0.4(webpack@5.91.0(esbuild@0.21.3)))(webpack@5.91.0(esbuild@0.21.3))
+      '@angular-devkit/core': 18.0.5(chokidar@3.6.0)
+      '@angular/build': 18.0.5(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(terser@5.31.0)(typescript@5.4.5)
       '@angular/compiler-cli': 18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5)
       '@babel/core': 7.24.5
       '@babel/generator': 7.24.5
@@ -5192,12 +5180,11 @@ snapshots:
       '@babel/preset-env': 7.24.5(@babel/core@7.24.5)
       '@babel/runtime': 7.24.5
       '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 18.0.2(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(typescript@5.4.5)(webpack@5.91.0(esbuild@0.21.3))
+      '@ngtools/webpack': 18.0.5(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(typescript@5.4.5)(webpack@5.91.0(esbuild@0.21.3))
       '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.2.11(@types/node@20.14.2)(less@4.2.0)(sass@1.77.2)(terser@5.31.0))
       ansi-colors: 4.1.3
       autoprefixer: 10.4.19(postcss@8.4.38)
       babel-loader: 9.1.3(@babel/core@7.24.5)(webpack@5.91.0(esbuild@0.21.3))
-      babel-plugin-istanbul: 6.1.1
       browserslist: 4.23.0
       copy-webpack-plugin: 11.0.0(webpack@5.91.0(esbuild@0.21.3))
       critters: 0.0.22
@@ -5207,6 +5194,7 @@ snapshots:
       http-proxy-middleware: 3.0.0
       https-proxy-agent: 7.0.4
       inquirer: 9.2.22
+      istanbul-lib-instrument: 6.0.2
       jsonc-parser: 3.2.1
       karma-source-map-support: 1.4.0
       less: 4.2.0
@@ -5264,16 +5252,16 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@angular-devkit/build-webpack@0.1800.2(chokidar@3.6.0)(webpack-dev-server@5.0.4(webpack@5.91.0(esbuild@0.21.3)))(webpack@5.91.0(esbuild@0.21.3))':
+  '@angular-devkit/build-webpack@0.1800.5(chokidar@3.6.0)(webpack-dev-server@5.0.4(webpack@5.91.0(esbuild@0.21.3)))(webpack@5.91.0(esbuild@0.21.3))':
     dependencies:
-      '@angular-devkit/architect': 0.1800.2(chokidar@3.6.0)
+      '@angular-devkit/architect': 0.1800.5(chokidar@3.6.0)
       rxjs: 7.8.1
       webpack: 5.91.0(esbuild@0.21.3)
       webpack-dev-server: 5.0.4(webpack@5.91.0(esbuild@0.21.3))
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/core@18.0.2(chokidar@3.6.0)':
+  '@angular-devkit/core@18.0.5(chokidar@3.6.0)':
     dependencies:
       ajv: 8.13.0
       ajv-formats: 3.0.1(ajv@8.13.0)
@@ -5284,9 +5272,9 @@ snapshots:
     optionalDependencies:
       chokidar: 3.6.0
 
-  '@angular-devkit/schematics@18.0.2(chokidar@3.6.0)':
+  '@angular-devkit/schematics@18.0.5(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/core': 18.0.2(chokidar@3.6.0)
+      '@angular-devkit/core': 18.0.5(chokidar@3.6.0)
       jsonc-parser: 3.2.1
       magic-string: 0.30.10
       ora: 5.4.1
@@ -5299,10 +5287,10 @@ snapshots:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       tslib: 2.6.3
 
-  '@angular/build@18.0.2(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(terser@5.31.0)(typescript@5.4.5)':
+  '@angular/build@18.0.5(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(@types/node@20.14.2)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(terser@5.31.0)(typescript@5.4.5)':
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular-devkit/architect': 0.1800.2(chokidar@3.6.0)
+      '@angular-devkit/architect': 0.1800.5(chokidar@3.6.0)
       '@angular/compiler-cli': 18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5)
       '@babel/core': 7.24.5
       '@babel/helper-annotate-as-pure': 7.22.5
@@ -5340,12 +5328,12 @@ snapshots:
       - supports-color
       - terser
 
-  '@angular/cli@18.0.2(chokidar@3.6.0)':
+  '@angular/cli@18.0.5(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/architect': 0.1800.2(chokidar@3.6.0)
-      '@angular-devkit/core': 18.0.2(chokidar@3.6.0)
-      '@angular-devkit/schematics': 18.0.2(chokidar@3.6.0)
-      '@schematics/angular': 18.0.2(chokidar@3.6.0)
+      '@angular-devkit/architect': 0.1800.5(chokidar@3.6.0)
+      '@angular-devkit/core': 18.0.5(chokidar@3.6.0)
+      '@angular-devkit/schematics': 18.0.5(chokidar@3.6.0)
+      '@schematics/angular': 18.0.5(chokidar@3.6.0)
       '@yarnpkg/lockfile': 1.1.0
       ansi-colors: 4.1.3
       ini: 4.1.2
@@ -6453,14 +6441,6 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@istanbuljs/load-nyc-config@1.1.0':
-    dependencies:
-      camelcase: 5.3.1
-      find-up: 4.1.0
-      get-package-type: 0.1.0
-      js-yaml: 3.14.1
-      resolve-from: 5.0.0
-
   '@istanbuljs/schema@0.1.3': {}
 
   '@jridgewell/gen-mapping@0.3.5':
@@ -6580,7 +6560,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@ngtools/webpack@18.0.2(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(typescript@5.4.5)(webpack@5.91.0(esbuild@0.21.3))':
+  '@ngtools/webpack@18.0.5(@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5))(typescript@5.4.5)(webpack@5.91.0(esbuild@0.21.3))':
     dependencies:
       '@angular/compiler-cli': 18.0.1(@angular/compiler@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(typescript@5.4.5)
       typescript: 5.4.5
@@ -6748,10 +6728,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.13.2':
     optional: true
 
-  '@schematics/angular@18.0.2(chokidar@3.6.0)':
+  '@schematics/angular@18.0.5(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/core': 18.0.2(chokidar@3.6.0)
-      '@angular-devkit/schematics': 18.0.2(chokidar@3.6.0)
+      '@angular-devkit/core': 18.0.5(chokidar@3.6.0)
+      '@angular-devkit/schematics': 18.0.5(chokidar@3.6.0)
       jsonc-parser: 3.2.1
     transitivePeerDependencies:
       - chokidar
@@ -7198,16 +7178,6 @@ snapshots:
       find-cache-dir: 4.0.0
       schema-utils: 4.2.0
       webpack: 5.91.0(esbuild@0.21.3)
-
-  babel-plugin-istanbul@6.1.1:
-    dependencies:
-      '@babel/helper-plugin-utils': 7.24.5
-      '@istanbuljs/load-nyc-config': 1.1.0
-      '@istanbuljs/schema': 0.1.3
-      istanbul-lib-instrument: 5.2.1
-      test-exclude: 6.0.0
-    transitivePeerDependencies:
-      - supports-color
 
   babel-plugin-polyfill-corejs2@0.4.10(@babel/core@7.24.5):
     dependencies:
@@ -8207,8 +8177,6 @@ snapshots:
       has-symbols: 1.0.3
       hasown: 2.0.2
 
-  get-package-type@0.1.0: {}
-
   get-stream@4.1.0:
     dependencies:
       pump: 3.0.0
@@ -8608,6 +8576,16 @@ snapshots:
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
       semver: 6.3.1
+    transitivePeerDependencies:
+      - supports-color
+
+  istanbul-lib-instrument@6.0.2:
+    dependencies:
+      '@babel/core': 7.24.5
+      '@babel/parser': 7.24.5
+      '@istanbuljs/schema': 0.1.3
+      istanbul-lib-coverage: 3.2.2
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
@@ -9717,8 +9695,6 @@ snapshots:
 
   resolve-from@4.0.0: {}
 
-  resolve-from@5.0.0: {}
-
   resolve-url-loader@5.0.0:
     dependencies:
       adjust-sourcemap-loader: 4.0.0
@@ -10267,12 +10243,6 @@ snapshots:
       acorn: 8.11.3
       commander: 2.20.3
       source-map-support: 0.5.21
-
-  test-exclude@6.0.0:
-    dependencies:
-      '@istanbuljs/schema': 0.1.3
-      glob: 7.2.3
-      minimatch: 3.1.2
 
   thingies@1.21.0(tslib@2.6.3):
     dependencies:
