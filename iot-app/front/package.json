@@ -32,7 +32,7 @@
     "@angular/compiler-cli": "^19.1.1",
     "@openapitools/openapi-generator-cli": "^2.15.3",
     "@types/jasmine": "~5.1.5",
-    "@types/node": "^22.10.3",
+    "@types/node": "^22.10.7",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~5.5.0",
     "jasmine-spec-reporter": "~7.0.0",
@@ -46,7 +46,7 @@
     "stream": "0.0.3",
     "swagger-cli": "^4.0.4",
     "ts-node": "~10.9.2",
-    "typescript": "5.6.2"
+    "typescript": "5.7.3"
   },
   "browser": {
     "fs": false
