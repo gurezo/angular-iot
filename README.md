@@ -4,11 +4,11 @@ this is angular, chirimen, docker, raspberry pi IoT sample.
 
 # Verification Software
 
-- npm v10.z
+- npm v10.x
 - node v22.x
 - yarn v1.22.2
-- [@angular/cli v18.x](https://github.com/angular/angular-cli)
-- [@angular/core v18.x](https://github.com/angular/angular)
+- [@angular/cli v19.x](https://github.com/angular/angular-cli)
+- [@angular/core v19.x](https://github.com/angular/angular)
 - [node-web-gpio forked](https://github.com/gurezo/node-web-gpio)
 - [Raspberry Pi OS 64bit release 2021-11-08](https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2021-11-08/)
 
