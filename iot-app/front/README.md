@@ -1,6 +1,6 @@
 # App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.x.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.x.
 
 ## Development server
 
