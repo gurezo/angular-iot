@@ -16,10 +16,10 @@ sudo apt-get -y autoclean
 # curlコマンドがbashのシェルスクリプトを介して実行されない
 # https://is.gd/bSlbfa
 # curl コマンドは変数に入れて実行
-# curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+# curl -sL https://deb.nodesource.com/setup_24.x | sudo -E bash -
 # https://github.com/nodesource/distributions 参照
 echo "npm, node install  ----------------------------------"
-nodeVer=22
+nodeVer=24
 nodeInstallCmd=`curl -sL https://deb.nodesource.com/setup_${nodeVer}.x | sudo -E bash -`
 eval ${nodeInstallCmd}
 sudo apt install nodejs -y
