@@ -1,5 +1,13 @@
 packages:
   - '.'
+allowBuilds:
+  '@nestjs/core': set this to true or false
+  '@openapitools/openapi-generator-cli': set this to true or false
+  '@parcel/watcher': set this to true or false
+  core-js: set this to true or false
+  esbuild: set this to true or false
+  lmdb: set this to true or false
+  msgpackr-extract: set this to true or false
 
 # 悪意のあるリリースは1週間以内に発見され、レジストリから削除される為
 # config = 7 day x 24h x 60 min
