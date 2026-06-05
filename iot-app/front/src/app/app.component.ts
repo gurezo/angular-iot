@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { finalize, Subject, takeUntil } from 'rxjs';
 import { AppService } from './app.service';
 
@@ -7,6 +7,7 @@ import { AppService } from './app.service';
     selector: 'ngiot-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: []
 })
 export class AppComponent implements OnInit {
