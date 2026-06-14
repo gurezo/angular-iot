@@ -25,3 +25,14 @@ minimumReleaseAgeExclude:
   - enhanced-resolve
   - memfs
   - node-releases
+  - '@nestjs/common@11.1.26'
+  - '@nestjs/core@11.1.26'
+  - '@openapitools/openapi-generator-cli@2.38.0'
+  - '@types/node@25.9.3'
+  - get-uri@8.0.1
+  - http-proxy-agent@9.1.0
+  - https-proxy-agent@9.1.0
+  - pac-proxy-agent@9.1.0
+  - proxy-agent-negotiate@1.1.0
+  - proxy-agent@8.0.2
+  - socks-proxy-agent@10.1.0
